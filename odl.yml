@@ -1,6 +1,7 @@
 ---
 - name: undercloud post provision
   hosts: undercloud
+  become: true
   tasks:
     - name: Set VLAN interface for public API network
       template:
